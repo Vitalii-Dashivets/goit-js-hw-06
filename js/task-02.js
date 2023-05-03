@@ -25,7 +25,7 @@ article.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 list.append(...elements);
 
-// додаткові фічі для виtвчення функціоналу
+// додаткові фічі для вивчення функціоналу
 list.before(title);
 list.after(article);
 

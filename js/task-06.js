@@ -2,17 +2,18 @@ const inputText=document.querySelector('#validation-input');
 inputText.addEventListener('blur',onValidInput);
 
 function onValidInput(event) {
-      //console.log(event.currentTarget.value.length);
+
     const textLength = event.currentTarget.value.length;
-    if ( textLength=== Number(inputText.dataset.length)) {
-       
-        inputText.setAttribute('id', 'validation-input.valid');
-        console.log('Entered 6 simbols');
+     
+    if (textLength === Number(inputText.dataset.length)) {
+        inputText.classList.remove('invalid');
+        inputText.classList.add('valid');
        
     } else if(textLength===0){
-        inputText.setAttribute('id', 'validation-input');
+        inputText.classList.remove('invalid');
+        inputText.classList.remove('valid');
     } else {
-        inputText.setAttribute('id', 'validation-input.invalid');
-        console.log('Invalid value');
+        inputText.classList.remove('valid');
+        inputText.classList.add( 'invalid');
     }
 }
