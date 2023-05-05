@@ -33,6 +33,7 @@ const elements = images.map(elem =>
 list.insertAdjacentHTML("beforeend", elements);
  
 const itemList = document.querySelectorAll(".item-image");
+
 itemList.forEach(elem =>
 {
   const text = elem.lastChild;
