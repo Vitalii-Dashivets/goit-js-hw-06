@@ -1,5 +1,5 @@
 const scale=document.querySelector("#font-size-control");
-scale.addEventListener("change", setSizeText);
+scale.addEventListener("input", setSizeText);
 
 const changeText = document.querySelector('#text');
 
